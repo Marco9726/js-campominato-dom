@@ -33,8 +33,21 @@
     for (let i = 1; i <= squaresNumber; i++) {
         //3.1.1 - creo l'elemento div all'interno della grid
         square = grid.appendChild(document.createElement('div'));
-        //3.1.2 - assegno classe square al div creato
-        square.className = 'square';
+        //6 - creo uno stwitch al posto del punto 3.1.2 per determinare quale classe assegnare allo square in base alla difficoltà
+        switch (difficulty) {
+            case "1":
+                square.className = 'square-easy';
+                break;
+            case "2":
+                square.className = 'square-normal';
+                break;
+            case "3":
+                square.className = 'square-hard';
+                break;
+            default:
+                square.className = 'square-easy';
+                break;
+            }
         //3.1.3 - visualizzo il numero dell'iterazione nel suo square
         square.append(i)
         //3.1.4 - addEventListner al click dello square

@@ -22,3 +22,4 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 
 //4 - creo costante del numero dei riquadri in base al value della select X
 //5 - creo uno switch per determinare il numero dei riquadri in base alla scelta del giocatore
+//6 - creo uno stwitch al posto del punto 3.1.2 per determinare quale classe assegnare allo square in base alla difficoltà
