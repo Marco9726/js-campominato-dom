@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+}
+
+html body{
+    background-color: black;
+}
+
+#buttons-container{
+    width: 750px;
+    margin: 1rem auto;
+
+}
+
+#container{
+    width: 750px;
+    height: 750px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid rgb(57, 123, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0,255,13);
+}
+
+.bg-blue{
+    background-color: rgb(57, 123, 229);
+}
+
+.square-normal{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid rgb(57, 123, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 192, 7);
+}
+
+.square-hard{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid rgb(57, 123, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(220, 45, 58);
+    font-size: 1.5rem;
+}
