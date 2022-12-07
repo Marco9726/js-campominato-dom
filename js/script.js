@@ -59,21 +59,31 @@
         }) 
         
     }
-    //7 - genero un umero casuale tra il range del numero delle caselle corrispondenti al livello di difficoltà scelto
-    const arrayNumbers = []
-    
-    let rndNbr
-
-    function randomNumber(min,max) {
-        return Math.floor(Math.random() * (max - min + 1) + min)
-    }
-    while (!arrayNumbers.includes(rndNbr)) {
-        let rndNbr = randomNumber(1, squaresNumber)
-        arrayNumbers.push(rndNbr)
-        console.log(arrayNumbers)
+    //7 - creo array di 16 numeri casuali in una funzione
+    function createBombsArray(min,max) {
+        //7.1 - definisco l'array vuoto con una costante
+        const arrayBombs = []
+        let i = 0;
+        //7.2 - con un ciclo while genero i 16 numeri
+        while (i < 16) {
+            //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
+             let rndNbr = Math.floor(Math.random() * (max - min + 1) + min);
+            //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
+             if(!arrayBombs.includes(rndNbr)){
+                arrayBombs.push(rndNbr);
+                i++
+             }  
         
+        }   
+
+        console.log(arrayBombs)
+        return arrayBombs;
     }
+    
+    createBombsArray (1, squaresNumber)
+
 })
+
 
 
 

@@ -25,4 +25,9 @@ In seguito l'utente clicca su una cella: se il numero è presente nella lista de
 La partita termina quando il giocatore clicca su una bomba o quando raggiunge il numero massimo possibile di numeri consentiti (ovvero quando ha rivelato tutte le celle che non sono bombe).
 Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
-//7 - genero un umero casuale tra il range del numero delle caselle corrispondenti al livello di difficoltà scelto
+//7 - creo array di 16 numeri casuali in una funzione
+        //7.1 - definisco l'array vuoto con una costante
+        //7.2 - con un ciclo while genero i 16 numeri
+            //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
+            //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
+
