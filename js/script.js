@@ -1,5 +1,5 @@
     //1.1 - creo costante collegata al bottone
-    const easy = document.getElementById('button-easy');
+    const start = document.getElementById('start');
     //2.1 - creo costante collegata al container
     const container = document.getElementById('container');
     //2.2 - creo costante collegata alla grid
@@ -7,7 +7,7 @@
     //2.3 - creo variabile square
     let square = ""
 //3 - addEventListner al click del bottone
-easy.addEventListener('click', function () {
+start.addEventListener('click', function () {
     //3.1 - creo ciclo for per generare 100 square
     grid.innerHTML = "";
     for (let i = 1; i <= 100; i++) {
