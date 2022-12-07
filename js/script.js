@@ -57,21 +57,22 @@
             //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
             console.log(i);
         }) 
-        function randomNumber(min,max) {
-            return Math.floor(Math.random() * (max - min + 1) + min)
-        }
-        const arrayNumbers = []
-
-        let rndNbr
-
-        while (!arrayNumbers.includes(rndNbr)) {
-            const rndNbr = randomNumber(1, squaresNumber)
-            console.log(rndNbr)
-            arrayNumbers.push(rndNbr)
-            
-        }
+        
     }
+    //7 - genero un umero casuale tra il range del numero delle caselle corrispondenti al livello di difficoltà scelto
+    const arrayNumbers = []
+    
+    let rndNbr
 
+    function randomNumber(min,max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+    while (!arrayNumbers.includes(rndNbr)) {
+        let rndNbr = randomNumber(1, squaresNumber)
+        arrayNumbers.push(rndNbr)
+        console.log(arrayNumbers)
+        
+    }
 })
 
 
