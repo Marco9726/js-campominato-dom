@@ -57,8 +57,23 @@
             //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
             console.log(i);
         }) 
+        function randomNumber(min,max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        const arrayNumbers = []
+
+        let rndNbr
+
+        while (!arrayNumbers.includes(rndNbr)) {
+            const rndNbr = randomNumber(1, squaresNumber)
+            console.log(rndNbr)
+            arrayNumbers.push(rndNbr)
+            
+        }
     }
+
 })
+
 
 
 

@@ -15,11 +15,14 @@ L'utente clicca su un bottone che genererà una griglia di gioco quadrata. Ogni 
                 //3.1.4.1 - assegno classe bg-blue allo square
                 //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
 
+
+//4 - creo costante del numero dei riquadri in base al value della select X
+//5 - creo uno switch per determinare il numero dei riquadri in base alla scelta del giocatore X
+//6 - creo uno stwitch al posto del punto 3.1.2 per determinare quale classe assegnare allo square in base alla difficoltà X
+
 Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. Attenzione: nella stessa cella può essere posizionata al massimo una bomba, perciò nell’array delle bombe non potranno esserci due numeri uguali.
 In seguito l'utente clicca su una cella: se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina. Altrimenti la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle.
 La partita termina quando il giocatore clicca su una bomba o quando raggiunge il numero massimo possibile di numeri consentiti (ovvero quando ha rivelato tutte le celle che non sono bombe).
 Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
-//4 - creo costante del numero dei riquadri in base al value della select X
-//5 - creo uno switch per determinare il numero dei riquadri in base alla scelta del giocatore
-//6 - creo uno stwitch al posto del punto 3.1.2 per determinare quale classe assegnare allo square in base alla difficoltà
+//7 - creo in una funzione 
