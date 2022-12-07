@@ -8,6 +8,25 @@
     let square = ""
     //3 - addEventListner al click del bottone start
     start.addEventListener('click', function () {
+        //7 - creo array di 16 numeri casuali in una funzione
+        const arrayBombs = []
+        function createBombsArray(min,max) {
+            //7.1 - definisco l'array vuoto con una costante
+            let i = 0;
+            //7.2 - con un ciclo while genero i 16 numeri
+            while (i < 16) {
+                //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
+                 let rndNbr = Math.floor(Math.random() * (max - min + 1) + min);
+                //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
+                 if(!arrayBombs.includes(rndNbr)){
+                    arrayBombs.push(rndNbr);
+                    i++
+                 }  
+            
+            }   
+            return arrayBombs;
+        }
+
         //4 - creo costante del numero dei riquadri in base al value della select
         let difficulty = document.getElementById('select').value;
         let squaresNumber
@@ -28,6 +47,8 @@
             }
             
             console.log(squaresNumber);
+        //invoco la funzione per la creazione dell'array delle bombe
+        createBombsArray (1, squaresNumber)
     //3.1 - creo ciclo for per generare 100 square
     grid.innerHTML = "";
     for (let i = 1; i <= squaresNumber; i++) {
@@ -54,33 +75,18 @@
         square.addEventListener('click', function() {
             //3.1.4.1- assegno classe bg-blue allo square
             this.classList.toggle('bg-blue')
+            //8 - verifico quando clicco uno square se abbia il numero uguale ad uno dei numeri inseriti nell'array delle bombe
+            if(arrayBombs.includes(parseInt(i))){
+                 //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div selezione e faccio apparire l'alert 'Hai perso'
+                this.classList.add('bg-bomb')
+                alert('BOOM! Hai perso')
+            }
             //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
             console.log(i);
         }) 
         
     }
-    //7 - creo array di 16 numeri casuali in una funzione
-    function createBombsArray(min,max) {
-        //7.1 - definisco l'array vuoto con una costante
-        const arrayBombs = []
-        let i = 0;
-        //7.2 - con un ciclo while genero i 16 numeri
-        while (i < 16) {
-            //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
-             let rndNbr = Math.floor(Math.random() * (max - min + 1) + min);
-            //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
-             if(!arrayBombs.includes(rndNbr)){
-                arrayBombs.push(rndNbr);
-                i++
-             }  
-        
-        }   
-
-        console.log(arrayBombs)
-        return arrayBombs;
-    }
-    
-    createBombsArray (1, squaresNumber)
+    console.log(arrayBombs);
 
 })
 

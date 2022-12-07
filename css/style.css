@@ -40,6 +40,12 @@ h1 i{
     background-color: rgb(57, 123, 229);
 }
 
+.bg-bomb{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/468/537/small_2x/background-with-bomb-in-pop-art-style-free-vector.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .square-normal{
     width: calc(100% / 9);
     height: calc(100% / 9);

@@ -26,8 +26,9 @@ La partita termina quando il giocatore clicca su una bomba o quando raggiunge il
 Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
 //7 - creo array di 16 numeri casuali in una funzione
-        //7.1 - definisco l'array vuoto con una costante
-        //7.2 - con un ciclo while genero i 16 numeri
-            //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
-            //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
-
+    //7.1 - definisco l'array vuoto con una costante
+    //7.2 - con un ciclo while genero i 16 numeri
+        //7.2.1 - dichiaro in una variabile il valore del singolo numero casuale 
+        //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
+//8 - verifico quando clicco uno square se abbia il numero uguale ad uno dei numeri inseriti nell'array delle bombe
+    //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div selezione e faccio apparire l'alert 'Hai perso'
