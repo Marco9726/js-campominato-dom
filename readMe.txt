@@ -1,12 +1,12 @@
 L'utente clicca su un bottone che genererà una griglia di gioco quadrata. Ogni cella ha un numero progressivo, da 1 a 100. Ci saranno quindi 10 caselle per ognuna delle 10 righe. Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
 //1 - creo bottone nell'html con id di riferimento
-    //1.1 - creo costante collegata al bottone
+    //1.1 - creo costante collegata al bottone start
 //2 - creo container e grid nell'html
     //2.1 - creo costante collegata al container
     //2.2 - creo costante collegata alla grid
     //2.3 - creo variabile square
-//3 - addEventListner al click del bottone
+//3 - addEventListner al click del bottone start
     //3.1 - creo ciclo for per generare 100 square
         //3.1.1 - creo l'elemento div all'interno della grid
         //3.1.2 - assegno classe square al div creato
@@ -15,26 +15,10 @@ L'utente clicca su un bottone che genererà una griglia di gioco quadrata. Ogni 
                 //3.1.4.1 - assegno classe bg-blue allo square
                 //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
 
-***** BONUS *****
+Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. Attenzione: nella stessa cella può essere posizionata al massimo una bomba, perciò nell’array delle bombe non potranno esserci due numeri uguali.
+In seguito l'utente clicca su una cella: se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina. Altrimenti la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle.
+La partita termina quando il giocatore clicca su una bomba o quando raggiunge il numero massimo possibile di numeri consentiti (ovvero quando ha rivelato tutte le celle che non sono bombe).
+Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
-//4 - creo bottoni normal e hard
-    //4.1 - creo costante collegata a normal
-    //4.2 - creo costante collegata a hard
-//5 - addEventListner al click di normal
-    //5.1 - creo ciclo for per generare 81 square
-        //
-        //
-        //
-            //
-                //
-                //
-//6 - addEventListner al click di hard
-    //5.1 - creo ciclo for per generare 49 square
-        //
-        //
-        //
-            //
-                //
-                //
-
-
+//4 - creo costante del numero dei riquadri in base al value della select X
+//5 - creo uno switch per determinare il numero dei riquadri in base alla scelta del giocatore
