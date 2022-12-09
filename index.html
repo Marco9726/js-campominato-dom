@@ -15,18 +15,21 @@
             <div class="col-12 mb-2">
                 <h1 class="text-primary">CAMP<i class="fa-solid fa-bomb"></i> MINAT<i class="fa-solid fa-bomb"></i></h1>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <button type="button" class="btn btn-success" id="start">Gioca</button>
 
             </div>
-            <div class="col-7 d-flex justify-content-end">
-                <select class="form-select w-50" aria-label="Default select example" id="select">
-                    <option selected>Scegli difficolt&agrave;</option>
+            <div class="col-5 ms-auto">
+                <select class="form-select w-75" aria-label="Default select example" id="select">
+                    <!-- //9.1 - creo l'elemento HTML di riferimento -->
+                    <option selected>Seleziona difficolt&agrave;</option>
                     <option value="1" class="bg-success">Facile</option>
                     <option value="2" class="bg-warning">Media</option>
                     <option value="3" class="text-bg-danger">Difficile</option>
                 </select>
-
+            </div>
+            <div class="col-3 d-flex">
+                <span id="score" class="text-light">Il tuo punteggio &egrave;:</span>
             </div>
         
         </div>

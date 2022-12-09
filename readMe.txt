@@ -32,3 +32,6 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
         //7.2.2 - se l'array non contiene il numero appena creato, inserisco tale numero nell'array
 //8 - verifico quando clicco uno square se abbia il numero uguale ad uno dei numeri inseriti nell'array delle bombe
     //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div selezione e faccio apparire l'alert 'Hai perso'
+//9 - mostro a schermo il punteggio fatto a fine partita
+    //9.1 - creo l'elemento HTML di riferimento
+    
