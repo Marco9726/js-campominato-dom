@@ -34,4 +34,6 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
     //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div selezione e faccio apparire l'alert 'Hai perso'
 //9 - mostro a schermo il punteggio fatto a fine partita
     //9.1 - creo l'elemento HTML di riferimento
-    
+    //9.2 - creo variabile contatore FUORI dal ciclo
+    //9.3 - se non clicco una bomba, il contatore aumenta di 1
+    //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
