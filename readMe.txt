@@ -37,3 +37,5 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
     //9.2 - creo variabile contatore FUORI dal ciclo
     //9.3 - se non clicco una bomba, il contatore aumenta di 1
     //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
+//10 - visuallizare a schermo tutte le bombe rimanenti una volta cliccata una bomba
+    //10.1 - creo una funzione per mostrare le bombe a schermo

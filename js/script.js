@@ -49,6 +49,17 @@
             console.log(squaresNumber);
         //invoco la funzione per la creazione dell'array delle bombe
         createBombsArray (1, squaresNumber);
+
+    //10.1 - creo una funzione per mostrare le bombe a schermo
+    function showAllBombs(arrayBombs, squaresNumber) {
+        for (let i = 1; i <=  squaresNumber; i++) {
+            if(arrayBombs.includes(i)){
+                square[i].classList.add('bg-bomb');
+            }
+            
+        }
+        
+    }
     //9.2 - creo variabile contatore FUORI dal ciclo
     let counter = 0;
     //3.1 - creo ciclo for per generare gli square in base al valore relativo alla difficoltà
@@ -83,7 +94,9 @@
                  //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div cliccato e faccio apparire l'alert 'Hai perso'
                 this.classList.add('bg-bomb');
                 alert('BOOM! Hai perso');
-                document.getElementById('score').innerText = counter
+                //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
+                document.getElementById('score').innerText = counter;
+                showAllBombs(arrayBombs, squaresNumber)
             }
              //9.3 - se non clicco una bomba, il contatore aumenta di 1
             else {
