@@ -39,3 +39,10 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
     //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
 //10 - visuallizare a schermo tutte le bombe rimanenti una volta cliccata una bomba
     //10.1 - creo una funzione per mostrare le bombe a schermo
+        //10.1.1 -  dichiaro una variabile relativa al numero dei quadrati ( celle )
+        //10.1.2 -  in base alla scelta della difficoltà seleziono quale classe recuperare dall'HTMl 
+        //10.1.3 - creo un ciclo for da 1 fino alla al numero delle celle
+            //10.1.3.1 - dichiaro una variabile relativa al numero di iterazione attuale delle celle da collegare alla singola cella
+            // 10.1.3.2 - se il numero di iterazione attuale è presente nell'array delle bombe...
+                //10.1.3.2.1 - ...aggiungo la classe 'bg-bomb' alla cell attuale
+

@@ -52,9 +52,9 @@
 
     //10.1 - creo una funzione per mostrare le bombe a schermo
     function showAllBombs(arrayBombs) {
-        // dichiaro una variabile relativa al numero dei quadrati ( celle )
+        //10.1.1 -  dichiaro una variabile relativa al numero dei quadrati ( celle )
         let cells
-        // in base alla scelta della difficoltà selezione quale classe recuperare dall'HTMl 
+        //10.1.2 -  in base alla scelta della difficoltà seleziono quale classe recuperare dall'HTMl 
         switch (difficulty) {
             case "1":
                 cells = document.getElementsByClassName('square-easy');
@@ -69,16 +69,15 @@
                 cells = document.getElementsByClassName('square-easy');
                 break;
             }
-        se 
+        //10.1.3 - creo un ciclo for da 1 fino alla al numero delle celle
         for (let i = 1; i <=  cells.length; i++) {
-            // dichiaro una variabile relativa al numero di iterazione attuale 
+            //10.1.3.1 - dichiaro una variabile relativa al numero di iterazione attuale delle celle da collegare alla singola cella
             let cell = cells[i];
-            // se il numero di iterazione attuale è presente nell'array delle bombe
+            // 10.1.3.2 - se il numero di iterazione attuale è presente nell'array delle bombe...
             if(arrayBombs.includes(i)){
-                // aggiungo la classe 'bg-bomb' alla cell attuale
+                //10.1.3.2.1 - ...aggiungo la classe 'bg-bomb' alla cell attuale
                 cell.classList.add('bg-bomb')
-            }
-            
+            }     
         }
         
     }
@@ -118,7 +117,7 @@
                 alert('BOOM! Hai perso');
                 //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
                 document.getElementById('score').innerText = counter;
-                showAllBombs(arrayBombs)
+                showAllBombs(arrayBombs);
             }
              //9.3 - se non clicco una bomba, il contatore aumenta di 1
             else {
