@@ -51,10 +51,32 @@
         createBombsArray (1, squaresNumber);
 
     //10.1 - creo una funzione per mostrare le bombe a schermo
-    function showAllBombs(arrayBombs, squaresNumber) {
-        for (let i = 1; i <=  squaresNumber; i++) {
+    function showAllBombs(arrayBombs) {
+        // dichiaro una variabile relativa al numero dei quadrati ( celle )
+        let cells
+        // in base alla scelta della difficoltà selezione quale classe recuperare dall'HTMl 
+        switch (difficulty) {
+            case "1":
+                cells = document.getElementsByClassName('square-easy');
+                break;
+            case "2":
+                cells = document.getElementsByClassName('square-normal');
+                break;
+            case "3":
+                cells = document.getElementsByClassName('square-hard');
+                break;
+            default:
+                cells = document.getElementsByClassName('square-easy');
+                break;
+            }
+        se 
+        for (let i = 1; i <=  cells.length; i++) {
+            // dichiaro una variabile relativa al numero di iterazione attuale 
+            let cell = cells[i];
+            // se il numero di iterazione attuale è presente nell'array delle bombe
             if(arrayBombs.includes(i)){
-                square[i].classList.add('bg-bomb');
+                // aggiungo la classe 'bg-bomb' alla cell attuale
+                cell.classList.add('bg-bomb')
             }
             
         }
@@ -96,7 +118,7 @@
                 alert('BOOM! Hai perso');
                 //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
                 document.getElementById('score').innerText = counter;
-                showAllBombs(arrayBombs, squaresNumber)
+                showAllBombs(arrayBombs)
             }
              //9.3 - se non clicco una bomba, il contatore aumenta di 1
             else {
