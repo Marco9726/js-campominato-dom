@@ -8,6 +8,8 @@
     let square = "";
     //3 - addEventListner al click del bottone start
     start.addEventListener('click', function () {
+        //se c'è, rimuovo la classe che mi impedisce di cliccare una volta perso
+        grid.classList.remove('events-none');
         //7 - creo array di 16 numeri casuali in una funzione
         //7.1 - definisco l'array vuoto con una costante
         const arrayBombs = []
@@ -115,15 +117,19 @@
                  //8.1 - Se così fosse, aggiungo la class 'bg-bomb' al div cliccato e faccio apparire l'alert 'Hai perso'
                 this.classList.add('bg-bomb');
                 alert('BOOM! Hai perso');
+                showAllBombs(arrayBombs);
                 //9.4 - mostro il risultato collegandomi all'ID creato nell'HTML
                 document.getElementById('score').innerText = counter;
-                showAllBombs(arrayBombs);
                 //impedisco di cliccare su altre caselle quando si perde
                 grid.classList.add('events-none');
             }
              //9.3 - se non clicco una bomba, il contatore aumenta di 1
             else {
                 counter++;
+            }
+
+            if(counter == squaresNumber - 16){
+                alert('HAI VINTO!')
             }
 
             //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
