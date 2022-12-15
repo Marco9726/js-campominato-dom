@@ -74,7 +74,7 @@
         //10.1.3 - creo un ciclo for da 1 fino alla al numero delle celle
         for (let i = 1; i <=  cells.length; i++) {
             //10.1.3.1 - dichiaro una variabile relativa al numero di iterazione attuale delle celle da collegare alla singola cella
-            let cell = cells[i];
+            let cell = cells[i-1];
             // 10.1.3.2 - se il numero di iterazione attuale è presente nell'array delle bombe...
             if(arrayBombs.includes(i)){
                 //10.1.3.2.1 - ...aggiungo la classe 'bg-bomb' alla cell attuale
@@ -130,6 +130,8 @@
 
             if(counter == squaresNumber - 16){
                 alert('HAI VINTO!')
+                showAllBombs(arrayBombs);
+
             }
 
             //3.1.4.2 - visualizzo numero dello suqare cliccato in console log
